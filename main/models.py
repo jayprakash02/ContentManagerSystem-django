@@ -1,13 +1,11 @@
 from django.db import models
+from django.contrib.postgres.fields import ArrayField
+
 
 # Create your models here.
 class Dashboard(models.Model):
     head = models.CharField(max_length=50)
     counter = models.IntegerField()
-
-class Chart(models.Model):
-    x = models.IntegerField()
-    y = models.IntegerField()
 
 class Table(models.Model):
     name = models.CharField(max_length=50)
@@ -24,4 +22,9 @@ class Piechart(models.Model):
     a = models.IntegerField()
     b = models.IntegerField()
     c = models.IntegerField()
-    
+
+class Barchart(models.Model):
+    data = ArrayField(ArrayField(
+            models.IntegerField(),
+            size=8,
+        ))
