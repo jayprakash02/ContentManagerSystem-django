@@ -25,7 +25,7 @@ SECRET_KEY = 'ri(zrp@p)i$7a#1!wna&&mvz2*#ml^$u_hw%t**7x15tv0!1f_'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://mediot.herokuapp.com/','127.0.0.1']
+ALLOWED_HOSTS = ['mediot.herokuapp.com','127.0.0.1']
 
 
 # Application definition
