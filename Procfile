@@ -1,1 +1,1 @@
-web: guicorn CMS.wsgi --log-file
+web: guicorn CMS.wsgi --log-file -
