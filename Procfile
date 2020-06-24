@@ -1,3 +1,3 @@
-web: guicorn CMS.wsgi --log-file -
+web: gunicorn CMS.wsgi
 python manage.py collectstatic
 manage.py migrate
