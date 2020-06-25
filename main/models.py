@@ -22,9 +22,3 @@ class Piechart(models.Model):
     a = models.IntegerField()
     b = models.IntegerField()
     c = models.IntegerField()
-
-class Barchart(models.Model):
-    data = ArrayField(ArrayField(
-            models.IntegerField(),
-            size=8,
-        ))
