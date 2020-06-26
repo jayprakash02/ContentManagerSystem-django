@@ -14,11 +14,3 @@ class Table(models.Model):
     age = models.IntegerField()
     date = models.DateField(auto_now=False, auto_now_add=False)
     salary = models.IntegerField()
-
-class Piechart(models.Model):
-    nameA = models.CharField(max_length=50,default='A')
-    nameB = models.CharField(max_length=50,default='B')
-    nameC = models.CharField(max_length=50,default='C')
-    a = models.IntegerField()
-    b = models.IntegerField()
-    c = models.IntegerField()
