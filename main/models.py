@@ -16,15 +16,8 @@ class Table(models.Model):
     salary = models.IntegerField()
 
 class Piechart(models.Model):
-    nameA = models.CharField(max_length=50,default='A')
-    nameB = models.CharField(max_length=50,default='B')
-    nameC = models.CharField(max_length=50,default='C')
-    a = models.IntegerField()
-    b = models.IntegerField()
-    c = models.IntegerField()
+    label = models.CharField(max_length=50,default='')
+    data = models.IntegerField(default=0)
 
 class Barchart(models.Model):
-    data = ArrayField(ArrayField(
-            models.IntegerField(),
-            size=8,
-        ))
+    data = models.IntegerField(default=0)
